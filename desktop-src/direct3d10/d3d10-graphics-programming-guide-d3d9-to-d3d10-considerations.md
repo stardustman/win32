@@ -340,18 +340,18 @@ The **D3DXxxCreateXXX** and **D3DXxxSaveXXX** functions that create or save a te
 
 | File Format | Direct3D 9 | Direct3D 10 |
 |-------------|------------|-------------|
-| .bmp        | x          | x           |
-| .jpg        | x          | x           |
-| .tga        | x          |             |
-| .png        | x          | x           |
-| .dds        | x          | x           |
-| .ppm        | x          |             |
-| .dib        | x          |             |
-| .hdr        | x          |             |
-| .pfm        | x          |             |
-| .tiff       |            | x           |
-| .gif        |            | x           |
-| .tif        |            | x           |
+| .bmp        | yes          | yes           |
+| .jpg        | yes          | yes           |
+| .tga        | yes          |             |
+| .png        | yes          | yes           |
+| .dds        | yes          | yes           |
+| .ppm        | yes          |             |
+| .dib        | yes          |             |
+| .hdr        | yes          |             |
+| .pfm        | yes          |             |
+| .tiff       |            | yes           |
+| .gif        |            | yes           |
+| .tif        |            | yes           |
 
 
 

@@ -1,9 +1,9 @@
 ---
-description: The following tables describe IPPROTO\_IPV6 socket options that apply to sockets created for the IPv6 address family (AF\_INET6). See the getsockopt and setsockopt function reference pages for more information on getting and setting socket options.
-ms.assetid: 65f8f7a4-757b-43a3-9d47-b115754c89d6
 title: IPPROTO_IPV6 socket options
+description: The following tables describe IPPROTO\_IPV6 socket options that apply to sockets created for the IPv6 address family (AF\_INET6). See the getsockopt and setsockopt function reference pages for more information on getting and setting socket options.
+ms.date: 10/25/2024
+ms.assetid: 65f8f7a4-757b-43a3-9d47-b115754c89d6
 ms.topic: article
-ms.date: 10/07/2019
 ---
 
 # IPPROTO\_IPV6 socket options
@@ -48,26 +48,26 @@ Some socket options require more explanation than these tables can convey; such 
 
 | Option | Windows 8 | Windows Server 2012 | Windows 7 | Windows Server 2008 | Windows Vista |
 |-|-|-|-|-|-|
-| IP\_ORIGINAL\_ARRIVAL\_IF | x | x | x | | |
+| IP\_ORIGINAL\_ARRIVAL\_IF | yes | yes | yes | | |
 | IPV6_ADD_IFLIST | Starting with Windows 10, version 1803 | | | | |
-| IPV6\_ADD\_MEMBERSHIP | x | x | x | x | x |
+| IPV6\_ADD\_MEMBERSHIP | yes | yes | yes | yes | yes |
 | IPV6_DEL_IFLIST | Starting with Windows 10, version 1803 | | | | |
-| IPV6\_DROP\_MEMBERSHIP | x | x | x | x | x |
+| IPV6\_DROP\_MEMBERSHIP | yes | yes | yes | yes | yes |
 | IPV6_GET_IFLIST | Starting with Windows 10, version 1803 | | | | |
-| IPV6\_HDRINCL | x | x | x | x | x |
-| IPV6\_HOPLIMIT | x | x | x | x | x |
+| IPV6\_HDRINCL | yes | yes | yes | yes | yes |
+| IPV6\_HOPLIMIT | yes | yes | yes | yes | yes |
 | IPV6_IFLIST | Starting with Windows 10, version 1803 | | | | |
-| IPV6\_JOIN\_GROUP | x | x | x | x | x |
-| IPV6\_LEAVE\_GROUP | x | x | x | x | x |
-| IPV6\_MULTICAST\_HOPS | x | x | x | x | x |
-| IPV6\_MULTICAST\_IF | x | x | x | x | x |
-| IPV6\_MULTICAST\_LOOP | x | x | x | x | x |
-| IPV6\_PKTINFO | x | x | x | x | x |
-| [IPV6\_PROTECTION\_LEVEL](ipv6-protection-level.md) | x | x | x | x | x |
-| IPV6\_RECVIF | x | x | x | x | x |
-| IPV6\_UNICAST\_HOPS | x | x | x | x | x |
-| IPV6\_UNICAST\_IF | x | x | x | x | x |
-| IPV6\_V6ONLY | x | x | x | x | x |
+| IPV6\_JOIN\_GROUP | yes | yes | yes | yes | yes |
+| IPV6\_LEAVE\_GROUP | yes | yes | yes | yes | yes |
+| IPV6\_MULTICAST\_HOPS | yes | yes | yes | yes | yes |
+| IPV6\_MULTICAST\_IF | yes | yes | yes | yes | yes |
+| IPV6\_MULTICAST\_LOOP | yes | yes | yes | yes | yes |
+| IPV6\_PKTINFO | yes | yes | yes | yes | yes |
+| [IPV6\_PROTECTION\_LEVEL](ipv6-protection-level.md) | yes | yes | yes | yes | yes |
+| IPV6\_RECVIF | yes | yes | yes | yes | yes |
+| IPV6\_UNICAST\_HOPS | yes | yes | yes | yes | yes |
+| IPV6\_UNICAST\_IF | yes | yes | yes | yes | yes |
+| IPV6\_V6ONLY | yes | yes | yes | yes | yes |
 
 <br/>
 
@@ -75,22 +75,22 @@ Some socket options require more explanation than these tables can convey; such 
 |-|-|-|
 | IP\_ORIGINAL\_ARRIVAL\_IF | | |
 | IPV6_ADD_IFLIST | | |
-| IPV6\_ADD\_MEMBERSHIP | x | x |
+| IPV6\_ADD\_MEMBERSHIP | yes | yes |
 | IPV6_DEL_IFLIST | | |
-| IPV6\_DROP\_MEMBERSHIP | x | x |
+| IPV6\_DROP\_MEMBERSHIP | yes | yes |
 | IPV6_GET_IFLIST | | |
-| IPV6\_HDRINCL  x | x |
-| IPV6\_HOPLIMIT  x | x |
+| IPV6\_HDRINCL  yes | yes |
+| IPV6\_HOPLIMIT  yes | yes |
 | IPV6_IFLIST | | |
-| IPV6\_JOIN\_GROUP | x | x |
-| IPV6\_LEAVE\_GROUP | x | x |
-| IPV6\_MULTICAST\_HOPS | x | x |
-| IPV6\_MULTICAST\_IF | x | x |
-| IPV6\_MULTICAST\_LOOP | x | x |
-| IPV6\_PKTINFO | x | x |
-| [IPV6\_PROTECTION\_LEVEL](ipv6-protection-level.md) | x | x |
+| IPV6\_JOIN\_GROUP | yes | yes |
+| IPV6\_LEAVE\_GROUP | yes | yes |
+| IPV6\_MULTICAST\_HOPS | yes | yes |
+| IPV6\_MULTICAST\_IF | yes | yes |
+| IPV6\_MULTICAST\_LOOP | yes | yes |
+| IPV6\_PKTINFO | yes | yes |
+| [IPV6\_PROTECTION\_LEVEL](ipv6-protection-level.md) | yes | yes |
 | IPV6\_RECVIF | | |
-| IPV6\_UNICAST\_HOPS | x | x |
+| IPV6\_UNICAST\_HOPS | yes | yes |
 | IPV6\_UNICAST\_IF | | |
 | IPV6\_V6ONLY | | |
 

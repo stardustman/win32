@@ -29,15 +29,15 @@ The variable-length header is compulsory and must be at the beginning of the dat
 
 | Type           | Required | Size (in bytes) | Value | Description                  |
 |----------------|----------|-----------------|-------|------------------------------|
-| Magic Number   | x        | 4               | xof   |                              |
-| Version Number | x        | 2               | 03    | Major version 3              |
+| Magic Number    yes         | 4               | xof   |                              |
+| Version Number  yes         | 2               | 03    | Major version 3              |
 |                |          |                 | 03    | Minor version 3              |
-| Format Type    | x        | 4               | txt   | Text File                    |
+| Format Type     yes         | 4               | txt   | Text File                    |
 |                |          |                 | bin   | Binary file                  |
 |                |          |                 | tzip  | MSZip compressed text file   |
 |                |          |                 | bzip  | MSZip compressed binary file |
-| Float Size     | x        | 0064            |       | 64-bit floats                |
-|                | x        | "0032"          |       | 32-bit floats                |
+| Float Size      yes         | 0064            |       | 64-bit floats                |
+|                 yes         | "0032"          |       | 32-bit floats                |
 
 
 

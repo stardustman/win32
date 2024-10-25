@@ -126,23 +126,23 @@ This option is available starting with Windows 10, version 1709.
 
 | Option | Windows 10 | Windows 7 | Windows Server 2008 | Windows Vista |
 |-|-|-|-|-|
-| TCP\_BSDURGENT | x | x | x | x |
-| TCP\_EXPEDITED\_1122 | x | x | x | x |
+| TCP\_BSDURGENT | yes | yes | yes | yes |
+| TCP\_EXPEDITED\_1122 | yes | yes | yes | yes |
 | TCP\_KEEPCNT | Starting with Windows 10, version 1703 | | | |
-| TCP\_MAXRT | x | x | x | x |
-| TCP\_NODELAY | x | x | x | x |
-| TCP\_TIMESTAMPS | x | x | x | x |
+| TCP\_MAXRT | yes | yes | yes | yes |
+| TCP\_NODELAY | yes | yes | yes | yes |
+| TCP\_TIMESTAMPS | yes | yes | yes | yes |
 | TCP\_FASTOPEN | Starting with Windows 10, version 1607 | | | |
 
 <br/>
 
  | Option | Windows Server 2003 | Windows XP | Windows 2000 | Windows NT4 | Windows 9x/Me |
 |-|-|-|-|-|-|
-| TCP\_BSDURGENT | x | x | x | x | |
-| TCP\_EXPEDITED\_1122 | x | x | x | | |
+| TCP\_BSDURGENT | yes | yes | yes | yes | |
+| TCP\_EXPEDITED\_1122 | yes | yes | yes | | |
 | TCP\_KEEPCNT | | | | | |
 | TCP\_MAXRT | | | | | |
-| TCP\_NODELAY | x | x | x | x | |
+| TCP\_NODELAY | yes | yes | yes | yes | |
 | TCP\_TIMESTAMPS | | | | | |
 | TCP\_FASTOPEN | | | | | |
 

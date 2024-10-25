@@ -69,19 +69,19 @@ Usages are either specified when a resource is created, or specified with [**Che
 
 | Usage                            | Vertex buffer create | Index buffer create | Texture create | Cube texture create | Volume texture create | Surface create | Check device format |
 |----------------------------------|----------------------|---------------------|----------------|---------------------|-----------------------|----------------|---------------------|
-| **D3DUSAGE\_AUTOGENMIPMAP**      |                      |                     | x              | x                   |                       |                | x                   |
-| **D3DUSAGE\_DEPTHSTENCIL**       |                      |                     | x              | x                   |                       | x              | x                   |
-| **D3DUSAGE\_DMAP**               |                      |                     | x              |                     |                       |                | x                   |
-| **D3DUSAGE\_DONOTCLIP**          | x                    | x                   |                |                     |                       |                |                     |
-| **D3DUSAGE\_DYNAMIC**            | x                    | x                   | x              | x                   | x                     |                | x                   |
-| **D3DUSAGE\_NONSECURE**          | x                    | x                   | x              | x                   | x                     | x              | x                   |
-| **D3DUSAGE\_NPATCHES**           | x                    | x                   |                |                     |                       |                |                     |
-| **D3DUSAGE\_POINTS**             | x                    | x                   |                |                     |                       |                |                     |
-| **D3DUSAGE\_RTPATCHES**          | x                    | x                   |                |                     |                       |                |                     |
-| **D3DUSAGE\_RENDERTARGET**       |                      |                     | x              | x                   |                       | x              | x                   |
-| **D3DUSAGE\_SOFTWAREPROCESSING** | x                    | x                   | x              | x                   | x                     |                | x                   |
-| **D3DUSAGE\_TEXTAPI**            | x                    |                     | x              |                     |                       |                |                     |
-| **D3DUSAGE\_WRITEONLY**          | x                    | x                   |                |                     |                       |                |                     |
+| **D3DUSAGE\_AUTOGENMIPMAP**      |                      |                      yes                yes                    |                       |                 yes                    |
+| **D3DUSAGE\_DEPTHSTENCIL**       |                      |                      yes                yes                    |                        yes                yes                    |
+| **D3DUSAGE\_DMAP**               |                      |                      yes               |                     |                       |                 yes                    |
+| **D3DUSAGE\_DONOTCLIP**           yes                      yes                    |                |                     |                       |                |                     |
+| **D3DUSAGE\_DYNAMIC**             yes                      yes                     yes                yes                     yes                      |                 yes                    |
+| **D3DUSAGE\_NONSECURE**           yes                      yes                     yes                yes                     yes                       yes                yes                    |
+| **D3DUSAGE\_NPATCHES**            yes                      yes                    |                |                     |                       |                |                     |
+| **D3DUSAGE\_POINTS**              yes                      yes                    |                |                     |                       |                |                     |
+| **D3DUSAGE\_RTPATCHES**           yes                      yes                    |                |                     |                       |                |                     |
+| **D3DUSAGE\_RENDERTARGET**       |                      |                      yes                yes                    |                        yes                yes                    |
+| **D3DUSAGE\_SOFTWAREPROCESSING**  yes                      yes                     yes                yes                     yes                      |                 yes                    |
+| **D3DUSAGE\_TEXTAPI**             yes                     |                      yes               |                     |                       |                |                     |
+| **D3DUSAGE\_WRITEONLY**           yes                      yes                    |                |                     |                       |                |                     |
 
 
 

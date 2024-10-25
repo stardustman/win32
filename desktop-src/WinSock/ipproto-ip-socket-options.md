@@ -1,9 +1,9 @@
 ---
-description: The following tables describe IPPROTO\_IP socket options that apply to sockets created for the IPv4 address family (AF\_INET). See the getsockopt and setsockopt function reference pages for more information on getting and setting socket options.
-ms.assetid: 6b06a29e-59cd-4446-bd2f-131dc25bf571
 title: IPPROTO_IP socket options
+description: The following tables describe IPPROTO\_IP socket options that apply to sockets created for the IPv4 address family (AF\_INET). See the getsockopt and setsockopt function reference pages for more information on getting and setting socket options.
+ms.date: 10/25/2024
+ms.assetid: 6b06a29e-59cd-4446-bd2f-131dc25bf571
 ms.topic: article
-ms.date: 10/02/2019
 ---
 
 # IPPROTO\_IP socket options
@@ -55,59 +55,59 @@ Some socket options require more explanation than these tables can convey; such 
 | Option | Windows 10 | Windows 8 | Windows Server 2012 | Windows 7 | Windows Server 2008 | Windows Vista |
 |-|-|-|-|-|-|-|
 | IP_ADD_IFLIST | Starting with Windows 10, version 1803 | | | | | |
-| IP\_ADD\_MEMBERSHIP | x | x | x | x | x | x |
-| IP\_ADD\_SOURCE\_MEMBERSHIP | x | x | x | x | x | x |
-| IP\_BLOCK\_SOURCE | x | x | x | x | x | x |
+| IP\_ADD\_MEMBERSHIP | yes | yes | yes | yes | yes | yes |
+| IP\_ADD\_SOURCE\_MEMBERSHIP | yes | yes | yes | yes | yes | yes |
+| IP\_BLOCK\_SOURCE | yes | yes | yes | yes | yes | yes |
 | IP_DEL_IFLIST | Starting with Windows 10, version 1803 | | | | | |
-| IP\_DONTFRAGMENT | x | x | x | x | x | x |
-| IP\_DROP\_MEMBERSHIP | x | x | x | x | x | x |
-| IP\_DROP\_SOURCE\_MEMBERSHIP | x | x | x | x | x | x |
+| IP\_DONTFRAGMENT | yes | yes | yes | yes | yes | yes |
+| IP\_DROP\_MEMBERSHIP | yes | yes | yes | yes | yes | yes |
+| IP\_DROP\_SOURCE\_MEMBERSHIP | yes | yes | yes | yes | yes | yes |
 | IP_GET_IFLIST | Starting with Windows 10, version 1803 | | | | | |
-| IP\_HDRINCL | x | x | x | x | x | x |
+| IP\_HDRINCL | yes | yes | yes | yes | yes | yes |
 | IP_IFLIST | Starting with Windows 10, version 1803 | | | | | |
-| IP\_MULTICAST\_IF | x | x | x | x | x | x |
-| IP\_MULTICAST\_LOOP | x | x | x | x | x | x |
-| IP\_MULTICAST\_TTL | x | x | x | x | x | x |
-| IP\_OPTIONS | x | x | x | x | x | x |
-| IP\_ORIGINAL\_ARRIVAL\_IF | x | x | x | x | | |
-| IP\_PKTINFO | x | x | x | x | x | x |
-| IP\_RECEIVE\_BROADCAST | x | x | x | x | x | x |
-| IP\_RECVIF | Starting with Windows 10, version 1703 | x | x | x | x | x |
-| IP\_RECVTTL | x | | | | | |
-| IP\_TOS | x | x | x | | | |
-| IP\_TTL | x | x | x | x | x | x |
-| IP\_UNBLOCK\_SOURCE | x | x | x | x | x | x |
-| IP\_UNICAST\_IF | x | x | x | x | x | x |
-| IP\_WFP\_REDIRECT\_CONTEXT | x | x | x | | | |
-| IP\_WFP\_REDIRECT\_RECORDS | x | x | x | | | |
+| IP\_MULTICAST\_IF | yes | yes | yes | yes | yes | yes |
+| IP\_MULTICAST\_LOOP | yes | yes | yes | yes | yes | yes |
+| IP\_MULTICAST\_TTL | yes | yes | yes | yes | yes | yes |
+| IP\_OPTIONS | yes | yes | yes | yes | yes | yes |
+| IP\_ORIGINAL\_ARRIVAL\_IF | yes | yes | yes | yes | | |
+| IP\_PKTINFO | yes | yes | yes | yes | yes | yes |
+| IP\_RECEIVE\_BROADCAST | yes | yes | yes | yes | yes | yes |
+| IP\_RECVIF | Starting with Windows 10, version 1703 | yes | yes | yes | yes | yes |
+| IP\_RECVTTL | yes | | | | | |
+| IP\_TOS | yes | yes | yes | | | |
+| IP\_TTL | yes | yes | yes | yes | yes | yes |
+| IP\_UNBLOCK\_SOURCE | yes | yes | yes | yes | yes | yes |
+| IP\_UNICAST\_IF | yes | yes | yes | yes | yes | yes |
+| IP\_WFP\_REDIRECT\_CONTEXT | yes | yes | yes | | | |
+| IP\_WFP\_REDIRECT\_RECORDS | yes | yes | yes | | | |
 
 <br/>
 
 | Option | Windows Server 2003 | Windows XP |
 |-|-|-|
 | IP_ADD_IFLIST | | |
-| IP\_ADD\_MEMBERSHIP | x | x |
-| IP\_ADD\_SOURCE\_MEMBERSHIP | x | x |
-| IP\_BLOCK\_SOURCE | x | x |
+| IP\_ADD\_MEMBERSHIP | yes | yes |
+| IP\_ADD\_SOURCE\_MEMBERSHIP | yes | yes |
+| IP\_BLOCK\_SOURCE | yes | yes |
 | IP_DEL_IFLIST | | |
-| IP\_DONTFRAGMENT | x | x |
-| IP\_DROP\_MEMBERSHIP | x | x |
-| IP\_DROP\_SOURCE\_MEMBERSHIP | x | x |
+| IP\_DONTFRAGMENT | yes | yes |
+| IP\_DROP\_MEMBERSHIP | yes | yes |
+| IP\_DROP\_SOURCE\_MEMBERSHIP | yes | yes |
 | IP_GET_IFLIST | | |
-| IP\_HDRINCL | x | x |
+| IP\_HDRINCL | yes | yes |
 | IP_IFLIST | | |
-| IP\_MULTICAST\_IF | x | x |
-| IP\_MULTICAST\_LOOP | x | x |
-| IP\_MULTICAST\_TTL | x | x |
-| IP\_OPTIONS | x | x |
+| IP\_MULTICAST\_IF | yes | yes |
+| IP\_MULTICAST\_LOOP | yes | yes |
+| IP\_MULTICAST\_TTL | yes | yes |
+| IP\_OPTIONS | yes | yes |
 | IP\_ORIGINAL\_ARRIVAL\_IF | | |
-| IP\_PKTINFO | x | x |
-| IP\_RECEIVE\_BROADCAST | x | x |
+| IP\_PKTINFO | yes | yes |
+| IP\_RECEIVE\_BROADCAST | yes | yes |
 | IP\_RECVIF | | |
 | IP\_RECVTTL | | |
 | IP\_TOS | | |
-| IP\_TTL | x | x |
-| IP\_UNBLOCK\_SOURCE | x | x |
+| IP\_TTL | yes | yes |
+| IP\_UNBLOCK\_SOURCE | yes | yes |
 | IP\_UNICAST\_IF | | |
 | IP\_WFP\_REDIRECT\_CONTEXT | | |
 | IP\_WFP\_REDIRECT\_RECORDS | | |
