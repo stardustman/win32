@@ -33,7 +33,7 @@ The following example shows retrieving the current CRL.
                            NULL,
                            CLSCTX_INPROC_SERVER,
                            IID_ICertAdmin2,
-                           (void **)&pCertAdmin2;);
+                           (void **)&pCertAdmin2);
     if (FAILED(hr))
     {
         printf("Failed CoCreateInstance pCertAdmin2 [%x]\n", hr);
@@ -42,7 +42,7 @@ The following example shows retrieving the current CRL.
 
     // Note the use of two '\' in C++ to produce one '\'.
     bstrCA = SysAllocString(L"<COMPUTERNAMEHERE>\\<CANAMEHERE>");
-    if (FAILED(hr))
+    if (bstrCA == NULL)
     {
         printf("Failed to allocate memory for bstrCA\n");
         goto error;
