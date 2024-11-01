@@ -102,11 +102,12 @@ The following example shows retrieving base and delta CRLs, including those for 
         goto error;
     }
     nCACertCount = variant.lVal;
+    VariantClear(&variant);
 
     for (nIndex = 0; nIndex < nCACertCount; nIndex++)
     {
            // Determine the CRL state for each certificate index.
-           pCertAdmin2->GetCAProperty(bstrCA, 
+           hr = pCertAdmin2->GetCAProperty(bstrCA, 
                                CR_PROP_CRLSTATE, 
                                nIndex, 
                                PROPTYPE_LONG, 
@@ -119,6 +120,7 @@ The following example shows retrieving base and delta CRLs, including those for 
             goto error;
         }
         nCRLState = variant.lVal;
+        VariantClear(&variant);
 
         // Process certificate indices only when 
         // the CRL state is valid.
@@ -141,6 +143,8 @@ The following example shows retrieving base and delta CRLs, including those for 
            // Use the base CRL as needed (not shown).
            // ...
 
+           VariantClear(&variant);
+ 
            // Retrieve the delta CRL.
            hr = pCertAdmin2->GetCAProperty(bstrCA, 
                                    CR_PROP_DELTACRL, 
@@ -157,8 +161,8 @@ The following example shows retrieving base and delta CRLs, including those for 
 
            // Use the delta CRL as needed (not shown).
            // ...
-
-       }        
+           VariantClear(&variant);
+        }        
     }
     
     // Processing is finished.
@@ -175,10 +179,5 @@ error:
 
     // Clear the variant.
     VariantClear(&variant);
-```
-
-
-
- 
-
+``` 
  
