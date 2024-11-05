@@ -49,6 +49,8 @@ For a window with the [**WS\_OVERLAPPED**](window-styles.md) or **WS\_THICKFRAME
 
 While this message is being processed, modifying any of the values in [**WINDOWPOS**](/windows/win32/api/winuser/ns-winuser-windowpos) affects the window's new size, position, or place in the Z order. An application can prevent changes to the window by setting or clearing the appropriate bits in the **flags** member of **WINDOWPOS**.
 
+Note that changes to some SWP flags are ignored when they are modified during WM_WINDOWPOSCHANGING. This includes SWP_NOACTIVATE and SWP_NOOWNERZORDER.
+
 ## Requirements
 
 
