@@ -74,7 +74,7 @@ This command creates a new shadow copy set.
 
 ## Importing a Shadow Copy Set
 
-**vshadow** \[OptionalFlags\] **-i=***File***.xml**
+**vshadow** \[OptionalFlags\] **-i=** *File* **.xml**
 
 The **-i** command-line option imports a transportable shadow copy set.
 
@@ -107,9 +107,9 @@ The **-i** command-line option cannot be combined with other command-line option
 
 **vshadow** **-q**
 
-**vshadow** **-qx=***ShadowCopySetId*
+**vshadow** **-qx=** *ShadowCopySetId*
 
-**vshadow** **-s=***ShadowCopyId*
+**vshadow** **-s=** *ShadowCopyId*
 
 The **-q** command-line option lists the properties of all shadow copies on the computer.
 
@@ -127,9 +127,9 @@ The **-q**, **-qx**, and **-s** command-line options are mutually exclusive and 
 
 **vshadow** **-do**
 
-**vshadow** **-dx=***ShadowCopySetId*
+**vshadow** **-dx=** *ShadowCopySetId*
 
-**vshadow** **-ds=***ShadowCopyId*
+**vshadow** **-ds=** *ShadowCopyId*
 
 The **-da** command deletes all shadow copies on the computer.
 
@@ -150,13 +150,13 @@ The **-da**, **-do**, **-dx**, and **-ds** command-line options are mutually exc
 
 ## Breaking a Shadow Copy Set
 
-**vshadow** **-b=***ShadowCopySetId*
+**vshadow** **-b=** *ShadowCopySetId*
 
-**vshadow** **-bw=***ShadowCopySetId*
+**vshadow** **-bw=** *ShadowCopySetId*
 
-The **-b=***ShadowCopySetId* command-line option converts each shadow copy in the shadow copy set into a stand-alone read-only volume.
+The **-b=** *ShadowCopySetId* command-line option converts each shadow copy in the shadow copy set into a stand-alone read-only volume.
 
-The **-bw=***ShadowCopySetId* command-line option converts each shadow copy in the shadow copy set into a stand-alone writable volume.
+The **-bw=** *ShadowCopySetId* command-line option converts each shadow copy in the shadow copy set into a stand-alone writable volume.
 
 > [!Note]  
 > The **-b** and **-bw** command-line options are supported only on Windows server operating systems.
@@ -202,9 +202,9 @@ The **-norevert** flag specifies that none of the shadow copy LUN disk identifie
 
 ## Exposing a Shadow Copy Locally
 
-**vshadow** **-el=***ShadowCopyId***,***LocalEmptyDirectory*
+**vshadow** **-el=** *ShadowCopyId* , *LocalEmptyDirectory*
 
- **vshadow** **-el=***ShadowCopyId***,***UnusedDriveLetter*
+**vshadow** **-el=** *ShadowCopyId* , *UnusedDriveLetter*
 
 The **-el** command-line option assigns a mounted folder or a drive letter to a persistent shadow copy. Note that the volume contents will remain read-only unless you subsequently call **vshadow** **-bw** to break the shadow copy set.
 
@@ -227,9 +227,9 @@ The **-el** command-line option cannot be combined with other command-line optio
 
 ## Exposing a Shadow Copy Remotely
 
-**vshadow** **-er=***ShadowCopyId***,***UnusedShareName*
+**vshadow** **-er=** *ShadowCopyId* , *UnusedShareName*
 
- **vshadow** **-er=***ShadowCopyId***,***UnusedShareName***,***PathFromRootOnShadow*
+**vshadow** **-er=** *ShadowCopyId* ,*UnusedShareName* ,*PathFromRootOnShadow*
 
 The **-er** command-line option assigns a read-only share name to the root directory (or a subdirectory) from the shadow copy. Note that the share contents will remain read-only unless you subsequently call **vshadow** **-bw** to break the shadow copy set.
 
@@ -279,9 +279,9 @@ The **-ws**, **-wm**, **-wm2**, and **-wm3** command-line options are mutually e
 
 ## Performing Restore Operations
 
-**vshadow** \[OptionalFlags\] **-r=***File***.xml**
+**vshadow** \[OptionalFlags\] **-r=** *File* **.xml**
 
-**vshadow** \[OptionalFlags\] **-rs=***File***.xml**
+**vshadow** \[OptionalFlags\] **-rs=** *File* **.xml**
 
 The **-r** command-line option performs a restore operation.
 
@@ -297,9 +297,9 @@ The **-r** and **-rs** command-line options are mutually exclusive and cannot be
 
 | Optional Flag Value                                                                                                            | Description                                                                                                                                                                                                                                                                        |
 |--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="-wi_Writer"></span><span id="-wi_writer"></span><span id="-WI_WRITER"></span>**-wi=***Writer*<br/>             | This optional flag verifies that the specified writer or component is included in the restore. *Writer* can specify a component path, writer name, writer ID, or writer instance ID.<br/>                                                                                    |
-| <span id="-wx_Writer"></span><span id="-wx_writer"></span><span id="-WX_WRITER"></span>**-wx=***Writer*<br/>             | This optional flag verifies that the specified writer or component is excluded from the restore. *Writer* can specify a component path, writer name, writer ID, or writer instance ID.<br/>                                                                                  |
-| <span id="-exec_Command"></span><span id="-exec_command"></span><span id="-EXEC_COMMAND"></span>**-exec=***Command*<br/> | This optional flag executes a command or script between the pre-restore and post-restore events that are sent to the writers. *Command* can specify an executable shell command or a CMD file. If it specifies a shell command, no command parameters can be specified.<br/> |
+| <span id="-wi_Writer"></span><span id="-wi_writer"></span><span id="-WI_WRITER"></span>**-wi=** *Writer*<br/>             | This optional flag verifies that the specified writer or component is included in the restore. *Writer* can specify a component path, writer name, writer ID, or writer instance ID.<br/>                                                                                    |
+| <span id="-wx_Writer"></span><span id="-wx_writer"></span><span id="-WX_WRITER"></span>**-wx=** *Writer*<br/>             | This optional flag verifies that the specified writer or component is excluded from the restore. *Writer* can specify a component path, writer name, writer ID, or writer instance ID.<br/>                                                                                  |
+| <span id="-exec_Command"></span><span id="-exec_command"></span><span id="-EXEC_COMMAND"></span>**-exec=** *Command*<br/> | This optional flag executes a command or script between the pre-restore and post-restore events that are sent to the writers. *Command* can specify an executable shell command or a CMD file. If it specifies a shell command, no command parameters can be specified.<br/> |
 | <span id="-tracing"></span><span id="-TRACING"></span>**-tracing**<br/>                                                  | This optional flag generates verbose output that can be used for troubleshooting.<br/>                                                                                                                                                                                       |
 
 
@@ -308,7 +308,7 @@ The **-r** and **-rs** command-line options are mutually exclusive and cannot be
 
 ## Reverting to a Previous Shadow Copy
 
-**vshadow** **-revert=***ShadowCopyId*
+**vshadow** **-revert=** *ShadowCopyId*
 
 > [!Note]  
 > This command-line option is supported only on Windows server operating systems.
@@ -323,9 +323,9 @@ The **-revert** command-line option cannot be combined with other command-line o
 
 ## Resynchronizing LUNs
 
-**vshadow** **-addresync=***ShadowCopyId* **-resync=***BCDFileName* \[OptionalResyncFlags\]
+**vshadow** **-addresync=** *ShadowCopyId* **-resync=** *BCDFileName* \[OptionalResyncFlags\]
 
-**vshadow** **-addresync=***ShadowCopyId***,** *TargetVolumeDriveLetter* **-resync=***BCDFileName* \[OptionalResyncFlags\]
+**vshadow** **-addresync=** *ShadowCopyId* , *TargetVolumeDriveLetter* **-resync=** *BCDFileName* \[OptionalResyncFlags\]
 
 The **-addresync** command-line option specifies the volumes to be included in a LUN resynchronization operation. The *ShadowCopyId* parameter specifies the identifier of the shadow copy. The optional *TargetVolumeDriveLetter* parameter specifies the destination volume where the contents of the shadow copy volume are to be copied.
 
