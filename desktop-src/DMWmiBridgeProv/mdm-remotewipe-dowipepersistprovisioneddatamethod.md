@@ -19,8 +19,6 @@ ms.date: 05/31/2018
 
 # doWipePersistProvisionedDataMethod method of the MDM_RemoteWipe class
 
-![image](https://user-images.githubusercontent.com/31261191/133865694-1fae8e8b-c3ba-41a9-bcba-dbb67a6e2130.png)
-
 Triggers the device to back up provisioning data to a persistent location, and perform a remote wipe on the device. The information that was backed up will be restored and applied to the device when it resumes. Also see [doWipePersistProvisionedDataMethod](/windows/client-management/mdm/remotewipe-csp).
 
 ## Syntax
